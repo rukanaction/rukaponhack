@@ -1,0 +1,289 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: Futura, Futura-BooObl, "Hirago KakuGothic Pro", sans-serif;
+    font-feature-settings: "palt" 1;
+}
+/*headerについて*/
+
+header{
+	
+	background-size: cover;
+	height: 821px;
+	position: relative;
+}
+
+.bg-slider{
+	width: 100vw;
+	-webkit-background-size: cover;
+    background-size: cover;
+}
+
+.container{
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+    transform: translate(-50%, -50%)
+}
+
+.container img{
+	width: 900px;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+.container p{
+	color: #ffffff;
+	font-size: 45px;
+	text-align: center;
+	font-style: italic;
+}
+
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+
+/*navについて*/
+
+nav {
+	position: absolute;
+	overflow: hidden;
+	padding-top: 30px;
+	top: 0;
+    right: 0;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li{
+	list-style-type: none;
+    margin-right: 25px;
+    font-size: 27px;
+}
+
+nav a{
+	color: #ffffff;
+	font-size: 26px;
+}
+
+nav a:hover{
+	color: #3d5cdb;
+	transition: 0.7s;
+}
+
+nav ul li:last-child {
+    margin-right: 65px;
+}
+
+nav ul li:not(:last-child) {
+    padding-right: 10px;
+	margin-right: 25px;
+}
+
+/*mainについて*/
+section{
+	width: 100vw;
+}
+
+main h2{
+	color: #3d5cdb;
+	font-size: 50px;
+	font-weight: 300;
+	text-align: center;
+	padding: 40px;
+}
+
+/*introductionについて*/
+.intro_1{
+	display: flex;
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.right_box{
+	margin: 20px;
+}
+
+.right_content{
+	width: 400px;
+	padding: 30px 20px 20px 70px;
+}
+#introduction p{
+	color: #333333;
+	font-family: "Hirago KakuGothic Pro";
+	font-size: 16px;
+	line-height: 32px;
+	width: 400px;
+}
+
+.intro_2{
+	display: flex;
+	width: 970px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 45px;
+}
+
+.left_box{
+	margin: 20px;
+}
+
+.left_content{
+	width: 400px;
+	padding: 50px 70px 20px 20px;
+}
+
+/*buttonについて*/
+button{
+	font-family: "Hirago KakuGothic Pro";
+	color: #ffffff;
+	display: block;
+	margin: 0 auto;
+	font-weight: 800;
+	width: 170px;
+	height: 40px;
+	margin-top: 30px;
+	border-radius: 12px;
+	border: 0px;
+}
+
+.right_content button{
+	font-size: 20px;
+    background-color: #3d5cdb;
+}
+
+.left_content button{
+	font-size: 20px;
+    background-color: #ffbf00;
+}
+
+button:hover {
+    box-shadow: 3px 2px 10px 2px #bbb;
+}
+
+/*coursesについて*/
+#courses{
+	height: 940px;
+	width: 100vw;
+	background: rgba(186,213,245,0.3);
+}
+
+.courses_wrapper{
+	margin-bottom: 60px;
+}
+
+.courses_all{
+	width: 180px;
+	height: 280px;
+	margin: 10px;
+	margin-top: 20px;
+	padding: 35px;
+	background-color: #ffffff;
+	border-radius: 12px;
+	position: relative;
+}
+
+.courses_all h3{
+	font-family: "Hirago KakuGothic Pro";
+	color: #333333;
+	text-align: center;
+	font-size: 15px;
+	padding-top: 10px;
+	margin: 10px;
+}
+
+.courses_img{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.courses_img img{
+	width: 100px;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.upper{
+	display: flex;
+	justify-content: center;
+}
+
+.lower{
+	display: flex;
+	justify-content: center;
+}
+
+/*buttonについて*/
+#html button{
+	background-color: #F16629;
+}
+
+#css button{
+	background-color: #2AAADF;
+}
+
+#unity button{
+	background-color: #333333;
+}
+
+#ruby button{
+	background-color: #FF5252;
+}
+
+#js button{
+	background-color: #FFD701;
+}
+
+#swift button{
+	background-color: #FE7635;
+}
+
+#go button{
+	background-color: #73CFDD;
+}
+
+/*lastについて*/
+#last{
+	height: 1052px;
+}
+
+.images{
+	text-align: center;
+}
+
+.images h2{
+	margin-bottom: 30px;
+}
+
+.images img{
+	width: 290px;
+	height: 190px;
+}
+
+.access{
+	text-align: center;
+	margin-top: 75px;
+}
+
+/*footerについて*/
+footer{
+	color: #3d5cdb;
+	text-align: center;
+	padding: 20px;
+}
