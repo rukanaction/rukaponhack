@@ -117,3 +117,9 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}

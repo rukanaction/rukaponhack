@@ -1,165 +1,207 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Happy Hack</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="images/favicon.ico">
-	<link href="./css/slick-theme.css" rel="stylesheet" type="text/css">
-    <link href="./css/slick.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+
+	<!--slickについて-->
+	<link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+	<link href="css/slick.css" rel="stylesheet" type="text/css">
+
+	<!--jQueryのCDN-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!--slickについて-->
+	<script type="text/javascript" src="js/slick.min.js"></script>
+
 </head>
 
 <body>
 	<header>
-	  <div class="bg-slider">
-		<nav>
-			<ul>
-				<li><a href="#introduction">Introduction</a></li>
-				<li><a href="#courses">Courses</a></li>
-				<li><a href="#images">Images</a></li>
-				<li><a href="#access">Access</a></li>
-			</ul>
-		</nav>
-		<div class="container">
-			<img src="images/logo.png" alt="">
-			<p>We are Web Designers.</p>
+		<div class="bg-slider">
+			<nav>
+				<ul>
+					<li><a href="#introduction">Introduction</a></li>
+					<li><a href="#courses">Courses</a></li>
+					<li><a href="#images">Images</a></li>
+					<li><a href="#access">Access</a></li>
+				</ul>
+			</nav>
+			<div class="container">
+				<img src="images/logo.png" alt="">
+				<p>We are Web Designers.</p>
+			</div>
 		</div>
-	  </div>
-	
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/jquery.bgswitcher.js"></script>
-    <script>
-        jQuery(function($) {
-    $('.bg-slider').bgswitcher({
-        images:  ['images/hero.jpg','images/background2.jpg','images/background3.jpg','images/background4.jpg','images/background5.jpg'], // 切り替え画像
-        Interval: 5000, //切り替えの間隔 1000=1秒
-        start: true, //$.fn.bgswitcher(config)をコールした時に切り替えを開始する
-        loop: true, //切り替えをループする
-        shuffle: false, //背景画像の順番をシャッフルする
-        effect: "fade", //エフェクトの種類 "fade" "blind" "clip" "slide" "drop" "hide"
-        duration: 1000, //エフェクトの時間 1000=1秒
-        easing: "swing", //エフェクトのイージング "swing" "linear"
-    });
-});
-    </script>
+
+		<script src="js/jquery.bgswitcher.js"></script>
+		<script>
+			jQuery(function($) {
+				$('.bg-slider').bgswitcher({
+					images: ['images/hero.jpg', 'images/background2.jpg', 'images/background3.jpg', 'images/background4.jpg', 'images/background5.jpg'], // 切り替え画像
+					Interval: 5000, //切り替えの間隔 1000=1秒
+					start: true, //$.fn.bgswitcher(config)をコールした時に切り替えを開始する
+					loop: true, //切り替えをループする
+					shuffle: false, //背景画像の順番をシャッフルする
+					effect: "fade", //エフェクトの種類 "fade" "blind" "clip" "slide" "drop" "hide"
+					duration: 1000, //エフェクトの時間 1000=1秒
+					easing: "swing", //エフェクトのイージング "swing" "linear"
+				});
+			});
+		</script>
 	</header>
-	
+
 	<main>
-		<section id="introduction">
+		<section class="fuwat" id="introduction">
 			<h2>Introduction</h2>
 			<div class="intro_1">
-			  <div class="right_box">
-				<img src="images/introduction_001.jpg" alt="" width="500">
-			  </div>
-			  <div class="right_content">
-				<p>Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
-                特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>
-                誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。</p>
-                <button>会員登録</button>
-			  </div>
+				<div class="right_box">
+					<img src="images/introduction_001.jpg" alt="" width="500">
+				</div>
+				<div class="right_content">
+					<p>Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
+						特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>
+						誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。</p>
+					<button>会員登録</button>
+				</div>
 			</div>
-			
+
 			<div class="intro_2">
-		      <div class="left_content">
-				<p>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
-                WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
-                自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。</p>
-                <button>会員登録</button>
-			  </div>
-			  <div class="left_box">
-				<img src="images/introduction_002.jpg" alt="" width="500">
-			   </div>
-			  </div>
-			
+				<div class="left_content">
+					<p>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
+						WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
+						自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。</p>
+					<button>会員登録</button>
+				</div>
+				<div class="left_box">
+					<img src="images/introduction_002.jpg" alt="" width="500">
+				</div>
+			</div>
+
 		</section>
-		<section id="courses">
-		    <h2>Courses</h2>
-		<div class="courses_wrapper">
-		<div class="upper">
-		<div class="courses_all" id="html">
-		    <div class="courses_img">
-			<img src="images/html.png" alt="">
+
+		<section class="fuwat" id="courses">
+			<div id="particles-js">
+
+				<h2>Courses</h2>
+				<div class="courses_wrapper">
+					<div class="upper">
+						<div class="courses_all" id="html">
+							<div class="courses_img">
+								<img src="images/html.png" alt="">
+							</div>
+							<h3>HTMLコース</h3>
+							<button>このコースを受ける</button>
+						</div>
+
+						<div class="courses_all" id="css">
+							<div class="courses_img">
+								<img src="images/css.png" alt="">
+							</div>
+							<h3>CSSコース</h3>
+							<button>このコースを受ける</button>
+						</div>
+
+						<div class="courses_all" id="unity">
+							<div class="courses_img">
+								<img src="images/unity.png" alt="">
+							</div>
+							<h3>Unityコース</h3>
+							<button>このコースを受ける</button>
+						</div>
+
+						<div class="courses_all" id="ruby">
+							<div class="courses_img">
+								<img src="images/ruby.png" alt="">
+							</div>
+							<h3>Rubyコース</h3>
+							<button>このコースを受ける</button>
+						</div>
+					</div>
+
+					<div class="lower">
+						<div class="courses_all" id="js">
+							<div class="courses_img">
+								<img src="images/js.png" alt="">
+							</div>
+							<h3>JavaScriptコース</h3>
+							<button>このコースを受ける</button>
+						</div>
+
+						<div class="courses_all" id="swift">
+							<div class="courses_img">
+								<img src="images/swift.png" alt="">
+							</div>
+							<h3>Swiftコース</h3>
+							<button>このコースを受ける</button>
+						</div>
+
+						<div class="courses_all" id="go">
+							<div class="courses_img">
+								<img src="images/go.png" alt="">
+							</div>
+							<h3>Goコース</h3>
+							<button>このコースを受ける</button>
+						</div>
+					</div>
+				</div>
 			</div>
-			<h3>HTMLコース</h3>
-			<button>このコースを受ける</button>
-		</div>
-		
-		<div class="courses_all" id="css">
-		    <div class="courses_img">
-			<img src="images/css.png" alt="">
-			</div>
-			<h3>CSSコース</h3>
-			<button>このコースを受ける</button>
-		</div>
-		
-		<div class="courses_all" id="unity">
-		    <div class="courses_img">
-			<img src="images/unity.png" alt="">
-			</div>
-			<h3>Unityコース</h3>
-			<button>このコースを受ける</button>
-		</div>
-		
-		<div class="courses_all" id="ruby">
-		    <div class="courses_img">
-			<img src="images/ruby.png" alt="">
-			</div>
-			<h3>Rubyコース</h3>
-			<button>このコースを受ける</button>
-		</div>
-		</div>
-        
-        <div class="lower">
-		<div class="courses_all" id="js">
-		    <div class="courses_img">
-			<img src="images/js.png" alt="">
-			</div>
-			<h3>JavaScriptコース</h3>
-			<button>このコースを受ける</button>
-		</div>
-		
-		<div class="courses_all" id="swift">
-		    <div class="courses_img">
-			<img src="images/swift.png" alt="">
-			</div>
-			<h3>Swiftコース</h3>
-			<button>このコースを受ける</button>
-		</div>
-		
-		<div class="courses_all" id="go">
-		    <div class="courses_img">
-			<img src="images/go.png" alt="">
-			</div>
-			<h3>Goコース</h3>
-			<button>このコースを受ける</button>
-		</div>
-		</div>
-		</div>
-			
 		</section>
-		
+
 		<section id="last">
-		<div class="images">
-	      <h2>Images</h2>
-	      <ul class="slider">
-		    <img src="images/hero.jpg" alt="">  
-		    <img src="images/background2.jpg" alt=""> 
-		    <img src="images/background3.jpg" alt="">
-		    <img src="images/background4.jpg" alt="">
-		  </ul>
-		</div>	
-		<div class="access">
-			<h2>Access</h2>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.312953947771!2d135.49025991526554!3d34.697285690908764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1600782373593!5m2!1sja!2sjp" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-		</div>
+			<div class="images fuwat" id="slick">
+				<h2>Images</h2>
+				<div class="slider">
+					<img src="images/hero.jpg" alt="">
+					<img src="images/background2.jpg" alt="">
+					<img src="images/background3.jpg" alt="">
+					<img src="images/background4.jpg" alt="">
+					<img src="images/background5.jpg" alt="">
+				</div>
+			</div>
+			<script type="text/javascript">
+				$('.slider').slick({
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					dots:true,
+				});
+			</script>
+
+
+			<div class="access fuwat">
+				<h2>Access</h2>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.312953947771!2d135.49025991526554!3d34.697285690908764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1600782373593!5m2!1sja!2sjp" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				
+			</div>
 		</section>
-		
-		
+
+
 		<footer>&copy;2019 Happy Hack Inc.</footer>
 	</main>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!--fuwatについて-->
+	　　　<script type="text/javascript">
+		$(document).ready(function() {
+			$('.fuwat').css('visibility', 'hidden');
+			$(window).scroll(function() {
+				var windowHeight = $(window).height(),
+					topWindow = $(window).scrollTop();
+				$('.fuwat').each(function() {
+					var objectPosition = $(this).offset().top;
+					if (topWindow > objectPosition - windowHeight + 200) {
+						$(this).addClass("fuwatAnime");
+					}
+				});
+			});
+		});
+	</script>
+
+	<!--particlesについて-->
+	<script src="js/particles.min.js"></script>
+	<script src="js/setting.js"></script>
+
 </body>
+
 </html>

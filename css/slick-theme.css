@@ -23,7 +23,7 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 40%;
 
     display: block;
 
@@ -71,7 +71,7 @@
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: #000000f;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -116,13 +116,13 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: -50px;
 
     display: block;
 
@@ -197,8 +197,13 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
     color: black;
+}
+
+.slick-slide-control{
+	display: none;
 }
