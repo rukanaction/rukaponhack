@@ -15,6 +15,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<!--slickについて-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 
 </head>
@@ -64,7 +65,7 @@
 					<p>Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
 						特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>
 						誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。</p>
-					<button>会員登録</button>
+					<button class="zentai">会員登録</button>
 				</div>
 			</div>
 
@@ -73,7 +74,7 @@
 					<p>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
 						WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
 						自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。</p>
-					<button>会員登録</button>
+					<button class="zentai">会員登録</button>
 				</div>
 				<div class="left_box">
 					<img src="images/introduction_002.jpg" alt="" width="500">
@@ -93,7 +94,7 @@
 								<img src="images/html.png" alt="">
 							</div>
 							<h3>HTMLコース</h3>
-							<button>このコースを受ける</button>
+							<button class="zentai">このコースを受ける</button>
 						</div>
 
 						<div class="courses_all" id="css">
@@ -101,7 +102,7 @@
 								<img src="images/css.png" alt="">
 							</div>
 							<h3>CSSコース</h3>
-							<button>このコースを受ける</button>
+							<button class="zentai">このコースを受ける</button>
 						</div>
 
 						<div class="courses_all" id="unity">
@@ -109,7 +110,7 @@
 								<img src="images/unity.png" alt="">
 							</div>
 							<h3>Unityコース</h3>
-							<button>このコースを受ける</button>
+							<button class="zentai">このコースを受ける</button>
 						</div>
 
 						<div class="courses_all" id="ruby">
@@ -117,7 +118,7 @@
 								<img src="images/ruby.png" alt="">
 							</div>
 							<h3>Rubyコース</h3>
-							<button>このコースを受ける</button>
+							<button class="zentai">このコースを受ける</button>
 						</div>
 					</div>
 
@@ -127,7 +128,7 @@
 								<img src="images/js.png" alt="">
 							</div>
 							<h3>JavaScriptコース</h3>
-							<button>このコースを受ける</button>
+							<button class="zentai">このコースを受ける</button>
 						</div>
 
 						<div class="courses_all" id="swift">
@@ -135,7 +136,7 @@
 								<img src="images/swift.png" alt="">
 							</div>
 							<h3>Swiftコース</h3>
-							<button>このコースを受ける</button>
+							<button class="zentai">このコースを受ける</button>
 						</div>
 
 						<div class="courses_all" id="go">
@@ -143,7 +144,7 @@
 								<img src="images/go.png" alt="">
 							</div>
 							<h3>Goコース</h3>
-							<button>このコースを受ける</button>
+							<button class="zentai">このコースを受ける</button>
 						</div>
 					</div>
 				</div>
@@ -154,13 +155,14 @@
 			<div class="images fuwat" id="slick">
 				<h2>Images</h2>
 				<div class="slider">
-					<img src="images/hero.jpg" alt="">
-					<img src="images/background2.jpg" alt="">
-					<img src="images/background3.jpg" alt="">
-					<img src="images/background4.jpg" alt="">
-					<img src="images/background5.jpg" alt="">
+					<div><img src="images/hero.jpg" alt=""></div>
+					<div><img src="images/background2.jpg" alt=""></div>
+					<div><img src="images/background3.jpg" alt=""></div>
+					<div><img src="images/background4.jpg" alt=""></div>
+					<div><img src="images/background5.jpg" alt=""></div>
 				</div>
 			</div>
+
 			<script type="text/javascript">
 				$('.slider').slick({
 					slidesToShow: 4,
@@ -175,7 +177,6 @@
 
 			</div>
 		</section>
-
 
 		<footer>&copy;2019 Happy Hack Inc.</footer>
 	</main>
