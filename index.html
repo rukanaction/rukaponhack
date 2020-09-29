@@ -3,8 +3,11 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Happy Hack</title>
 	<link rel="stylesheet" href="style.css">
+
+	<!--ビューポイントの設定-->
 	<link rel="icon" href="images/favicon.ico">
 
 	<!--slickについて-->
@@ -59,7 +62,7 @@
 			<h2>Introduction</h2>
 			<div class="intro_1">
 				<div class="right_box">
-					<img src="images/introduction_001.jpg" alt="" width="500">
+					<img src="images/introduction_001.jpg" alt="" width="500px">
 				</div>
 				<div class="right_content">
 					<p>Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
@@ -77,14 +80,14 @@
 					<button class="zentai">会員登録</button>
 				</div>
 				<div class="left_box">
-					<img src="images/introduction_002.jpg" alt="" width="500">
+					<img src="images/introduction_002.jpg" alt="" width="500px">
 				</div>
 			</div>
 
 		</section>
 
 		<section class="fuwat" id="courses">
-			<div id="particles-js">
+			<div id="particles-js" class="particles-js">
 
 				<h2>Courses</h2>
 				<div class="courses_wrapper">
@@ -94,7 +97,7 @@
 								<img src="images/html.png" alt="">
 							</div>
 							<h3>HTMLコース</h3>
-							<button class="zentai">このコースを受ける</button>
+							<button class="zentai botan">このコースを受ける</button>
 						</div>
 
 						<div class="courses_all" id="css">
@@ -102,7 +105,7 @@
 								<img src="images/css.png" alt="">
 							</div>
 							<h3>CSSコース</h3>
-							<button class="zentai">このコースを受ける</button>
+							<button class="zentai botan">このコースを受ける</button>
 						</div>
 
 						<div class="courses_all" id="unity">
@@ -110,7 +113,7 @@
 								<img src="images/unity.png" alt="">
 							</div>
 							<h3>Unityコース</h3>
-							<button class="zentai">このコースを受ける</button>
+							<button class="zentai botan">このコースを受ける</button>
 						</div>
 
 						<div class="courses_all" id="ruby">
@@ -118,7 +121,7 @@
 								<img src="images/ruby.png" alt="">
 							</div>
 							<h3>Rubyコース</h3>
-							<button class="zentai">このコースを受ける</button>
+							<button class="zentai botan">このコースを受ける</button>
 						</div>
 					</div>
 
@@ -128,7 +131,7 @@
 								<img src="images/js.png" alt="">
 							</div>
 							<h3>JavaScriptコース</h3>
-							<button class="zentai">このコースを受ける</button>
+							<button class="zentai botan">このコースを受ける</button>
 						</div>
 
 						<div class="courses_all" id="swift">
@@ -136,7 +139,7 @@
 								<img src="images/swift.png" alt="">
 							</div>
 							<h3>Swiftコース</h3>
-							<button class="zentai">このコースを受ける</button>
+							<button class="zentai botan">このコースを受ける</button>
 						</div>
 
 						<div class="courses_all" id="go">
@@ -144,7 +147,7 @@
 								<img src="images/go.png" alt="">
 							</div>
 							<h3>Goコース</h3>
-							<button class="zentai">このコースを受ける</button>
+							<button class="zentai botan">このコースを受ける</button>
 						</div>
 					</div>
 				</div>
@@ -168,14 +171,22 @@
 					slidesToShow: 4,
 					slidesToScroll: 1,
 					dots: true,
+					responsive: [{
+						breakpoint: 470,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+						}
+					}]
 				});
 			</script>
 
 			<div class="access fuwat">
 				<h2>Access</h2>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.312953947771!2d135.49025991526554!3d34.697285690908764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1600782373593!5m2!1sja!2sjp" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.312953947771!2d135.49025991526554!3d34.697285690908764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1600782373593!5m2!1sja!2sjp" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="map"></iframe></div>
 
 			</div>
+
 		</section>
 
 		<footer>&copy;2019 Happy Hack Inc.</footer>

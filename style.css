@@ -1,75 +1,94 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
 
 body {
-    font-family: Futura, Futura-BooObl, "Hirago KakuGothic Pro", sans-serif;
-    font-feature-settings: "palt" 1;
+	font-family: Futura, Futura-BooObl, "Hirago KakuGothic Pro", sans-serif;
+	font-feature-settings: "palt"1;
 }
 
 /*fuwatについて*/
 .fuwatAnime {
- -webkit-animation-fill-mode:both;
- -ms-animation-fill-mode:both;
- animation-fill-mode:both;
- -webkit-animation-duration:1.5s;
- -ms-animation-duration:1.5s;
- animation-duration:1.5s;
- -webkit-animation-name: fuwatAnime;
- -ms-animation-name: fuwatAnime;
- animation-name: fuwatAnime;
- visibility: visible !important;
+	-webkit-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 1.5s;
+	-ms-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-name: fuwatAnime;
+	-ms-animation-name: fuwatAnime;
+	animation-name: fuwatAnime;
+	visibility: visible !important;
 }
+
 @-webkit-keyframes fuwatAnime {
- 0% { opacity: 0; -webkit-transform: translateY(-20px); }
- 100% { opacity: 1; -webkit-transform: translateY(0); }
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
 }
+
 @keyframes fuwatAnime {
- 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
- 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-20px);
+		-ms-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
 }
 
 /*headerについて*/
 
-header{
-	
+header {
 	background-size: cover;
-	height: 821px;
+	height: 100vh;
 	position: relative;
 }
 
-.bg-slider{
+.bg-slider {
 	width: 100vw;
-	height: 830px;
+	height: 100vh;
 	-webkit-background-size: cover;
-    background-size: cover;
+	background-size: cover;
 }
 
-.container{
+.container {
 	position: absolute;
 	text-align: center;
 	margin: 0 auto;
 	top: 50%;
 	left: 50%;
 	position: absolute;
-    transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
-.container img{
+.container img {
 	width: 900px;
 	margin: auto;
 	margin-bottom: 30px;
 }
 
-.container p{
+.container p {
 	color: #ffffff;
 	font-size: 45px;
 	text-align: center;
 	font-style: italic;
 }
 
-a{
+a {
 	text-decoration: none;
 	display: inline-block;
 }
@@ -81,47 +100,48 @@ nav {
 	overflow: hidden;
 	padding-top: 30px;
 	top: 0;
-    right: 0;
+	right: 0;
 
 }
 
 nav ul {
-    display: flex;
-    justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 }
 
-nav ul li{
+nav ul li {
 	list-style-type: none;
-    margin-right: 25px;
-    font-size: 27px;
+	margin-right: 25px;
+	font-size: 27px;
 }
 
-nav a{
+nav a {
 	color: #ffffff;
 	font-size: 26px;
 }
 
-nav a:hover{
+nav a:hover {
 	color: #3d5cdb;
 	transition: 0.7s;
 }
 
 nav ul li:last-child {
-    margin-right: 65px;
+	margin-right: 65px;
 }
 
 nav ul li:not(:last-child) {
-    padding-right: 10px;
+	padding-right: 10px;
 	margin-right: 25px;
 }
 
 /*mainについて*/
 
-section{
+section {
 	width: 100vw;
+
 }
 
-main h2{
+main h2 {
 	color: #3d5cdb;
 	font-size: 50px;
 	font-weight: 300;
@@ -131,21 +151,22 @@ main h2{
 
 /*introductionについて*/
 
-.intro_1{
+.intro_1 {
 	display: flex;
 	width: 1080px;
 	margin: 0 auto;
 }
 
-.right_box{
+.right_box {
 	margin: 20px;
 }
 
-.right_content{
+.right_content {
 	width: 400px;
 	padding: 30px 20px 20px 70px;
 }
-#introduction p{
+
+#introduction p {
 	color: #333333;
 	font-family: "Hirago KakuGothic Pro";
 	font-size: 16px;
@@ -153,7 +174,7 @@ main h2{
 	width: 400px;
 }
 
-.intro_2{
+.intro_2 {
 	display: flex;
 	width: 970px;
 	margin: 0 auto;
@@ -161,18 +182,18 @@ main h2{
 	margin-bottom: 45px;
 }
 
-.left_box{
+.left_box {
 	margin: 20px;
 }
 
-.left_content{
+.left_content {
 	width: 400px;
 	padding: 50px 70px 20px 20px;
 }
 
 /*buttonについて*/
 
-.zentai{
+.zentai {
 	font-family: "Hirago KakuGothic Pro";
 	color: #ffffff;
 	display: block;
@@ -185,56 +206,66 @@ main h2{
 	border: 0px;
 }
 
-.right_content button{
+.right_content button {
 	font-size: 20px;
-    background-color: #3d5cdb;
+	background-color: #3d5cdb;
 }
 
-.left_content button{
+.left_content button {
 	font-size: 20px;
-    background-color: #ffbf00;
+	background-color: #ffbf00;
 }
 
 .zentai:hover {
-    box-shadow: 3px 2px 10px 2px #bbb;
+	box-shadow: 3px 2px 10px 2px #bbb;
 }
 
 /*coursesについて*/
 
-#courses{
-	height: 940px;
+#courses {
 	width: 100vw;
-	background-color: rgba(186,213,245,0.7);
+	background-color: rgba(186, 213, 245, 0.7);
 	position: relative;
 }
 
+/*
+#particles-js canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+*/
+
 #courses canvas {
-    top: 0;
-    left: 0;
-    z-index: 1;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	position: absolute;
+}
+
+.particles-js {
+	position: relative;
+	z-index: 10;
 }
 
 #courses h2 {
-	position: absolute;
-	top: 8%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+	position: relative;
 }
 
-.courses_wrapper{
+.courses_wrapper {
 	width: 100vw;
-	position: absolute;
+	position: relative;
 	margin-bottom: 60px;
+	/*	
 	top: 56%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	*/
 }
 
-.courses_all{
+.courses_all {
 	width: 180px;
 	height: 280px;
 	margin: 10px;
@@ -245,7 +276,7 @@ main h2{
 	position: relative;
 }
 
-.courses_all h3{
+.courses_all h3 {
 	font-family: "Hirago KakuGothic Pro";
 	color: #333333;
 	text-align: center;
@@ -254,7 +285,7 @@ main h2{
 	margin: 10px;
 }
 
-.courses_img{
+.courses_img {
 	position: relative;
 	width: 150px;
 	height: 150px;
@@ -262,72 +293,72 @@ main h2{
 	text-align: center;
 }
 
-.courses_img img{
+.courses_img img {
 	width: 100px;
 	top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
-.upper{
+.upper {
 	display: flex;
 	justify-content: center;
 }
 
-.lower{
+.lower {
 	display: flex;
 	justify-content: center;
 }
 
 /*buttonについて*/
-#html button{
+#html button {
 	background-color: #F16629;
 }
 
-#css button{
+#css button {
 	background-color: #2AAADF;
 }
 
-#unity button{
+#unity button {
 	background-color: #333333;
 }
 
-#ruby button{
+#ruby button {
 	background-color: #FF5252;
 }
 
-#js button{
+#js button {
 	background-color: #FFD701;
 }
 
-#swift button{
+#swift button {
 	background-color: #FE7635;
 }
 
-#go button{
+#go button {
 	background-color: #73CFDD;
 }
 
 /*lastについて*/
-#last{
+#last {
 	height: 1052px;
 }
 
-.images{
+.images {
 	text-align: center;
 }
 
-.images h2{
+.images h2 {
 	margin-bottom: 30px;
 }
 
-.images img{
+.images img {
 	width: 290px;
 	height: 190px;
 }
 
-.images li{
+.images li {
 	list-style-type: none;
 	display: inline;
 }
@@ -336,23 +367,209 @@ main h2{
 /*slick setting*/
 .slick-prev:before,
 .slick-next:before {
- color: #000;
+	color: #000;
 }
 
-.slider{
+.slider {
 	width: 1160px;
 	margin: 0 auto;
 	list-style-type: none;
 }
 
-.access{
+.slider img {
+	height: auto;
+	width: 100%;
+}
+
+.access {
 	text-align: center;
 	margin-top: 75px;
 }
 
 /*footerについて*/
-footer{
+footer {
 	color: #3d5cdb;
 	text-align: center;
 	padding: 20px;
+}
+
+/*sp版(~480px:スマホ縦)について*/
+@media screen and (max-width:479px) {
+
+	/*headerについて*/
+	.container {
+		width: 70vw;
+	}
+
+	.container img {
+		width: 70vw;
+		margin: auto;
+	}
+
+	.container p {
+		font-size: 100%;
+		font-style: italic;
+		margin-top: 20px;
+	}
+
+	/*navについて*/
+	nav {
+		display: none;
+	}
+
+	/*mainについて*/
+	main h2 {
+		font-size: 200%;
+		padding-bottom: 20px;
+	}
+
+	/*introductionについて*/
+
+	#introduction p {
+		width: 100%;
+		font-size: 13px;
+		margin: 0 auto;
+	}
+
+	.intro_1 {
+		width: 100%;
+		flex-direction: column;
+		margin-bottom: 30px;
+	}
+
+	.right_content {
+		width: 100%;
+		padding: 0;
+		box-sizing: border-box;
+		padding: 20px;
+	}
+
+	.right_content p {
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+		font-size: 13px;
+	}
+
+	.right_box img {
+		width: 100%;
+		padding: 0;
+	}
+
+	.intro_2 {
+		width: 100%;
+		flex-direction: column-reverse;
+	}
+
+	.left_content {
+		width: 100%;
+		padding: 0;
+		box-sizing: border-box;
+		padding: 20px;
+	}
+
+	.left_content p {
+		width: 100%;
+		padding: 0 20px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		font-size: 13px;
+	}
+
+	.left_box img {
+		width: 100%;
+		padding: 0;
+	}
+
+	/*coursesについて*/
+
+	.courses_wrapper {
+		overflow: hidden;
+		width: 100%;
+		height: auto;
+		display: block;
+		z-index: 12;
+		margin-bottom: 0;
+	}
+
+	.courses_all {
+		width: 90px;
+		height: 170px;
+		margin: 10px;
+	}
+
+	.courses_img {
+		width: 90px;
+		height: 90px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.courses_img img {
+		width: 50px;
+	}
+
+	.courses_all h3 {
+		font-size: 10px;
+	}
+
+	.upper {
+		flex-wrap: wrap;
+
+	}
+
+	.lower {
+		flex-wrap: wrap;
+	}
+
+	/*lastについて*/
+	#last {
+		height: auto;
+	}
+
+	/*buttonについて*/
+
+	.botan {
+		width: 100px;
+		height: 40px;
+		margin-top: 20px;
+		border-radius: 20px;
+		font-size: 10px;
+	}
+
+	/*sliderについて*/
+	.images {
+		margin: 0 35px 35px 35px;
+	}
+
+	.slider {
+		overflow: visible;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.images img {
+		margin: auto;
+	}
+
+	.map {
+		position: relative;
+		width: 100%;
+		padding-top: 75%;
+		/* = height ÷ width × 100 */
+	}
+
+	.map iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	/*footerについて*/
+	footer {
+		padding-top: 20px;
+	}
+
 }
